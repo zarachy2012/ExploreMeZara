@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:hotpink;
+    background-image: linear-gradient(125deg, indigo 0%, hotpink 80%);
+}
+button{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin: 5px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart{
+    background: #fdbb2d;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+.cart i{
+    position: absolute;
+    margin-left: 90px;
+    column-fill: transparent;
+    transition: 400ms;
+    color: transparent;
+}
+.cart span{
+    transition: 400ms;
+}
+.cart:hover span{
+    margin-right: 30px;
+}
+.cart:hover i{
+    margin-left: 45px;
+    column-fill: white;
+    color: black;
+}
+button:focus{
+    outline: none;
+}

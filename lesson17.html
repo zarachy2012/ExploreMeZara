@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Text Animation</title>
+<style>
+body {
+background:#5e225b;
+overflow:hidden;
+}
+div{
+top:40%;
+position:absolute;
+left:-50;
+font-size:50px;
+font-family:cocon;
+}
+div:nth-child(1) {
+color:#ff5460;
+animation:move 2s infinite cubic-bezier(.2,.64,.81,.23);
+}
+div:nth-child(2) {
+color:#ff9d84;
+animation:move 2s 150ms infinite cubic-bezier(.2,.64,.81,.23);
+}
+div:nth-child(3) {
+color:#f0e797;
+animation:move 2s 300ms infinite cubic-bezier(.2,.64,.81,.23);
+}
+div:nth-child(4) {
+color:#75b08a;
+animation:move 2s 450ms infinite cubic-bezier(.2,.64,.81,.23);
+}
+div:nth-child(5) {
+color:#1c846c;
+animation:move 2s 600ms infinite cubic-bezier(.2,.64,.81,.23);
+}
+@keyframes move {
+0%{left:100%;}
+100%{left:0;}
+}
+</style>
+</head>
+<body>
+<div>Zara's</div>
+<div>S</div>
+<div>h</div>
+<div>o</div>
+<div>p</div>
+</body>
